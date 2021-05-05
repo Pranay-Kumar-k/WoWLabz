@@ -2,14 +2,16 @@ import firebase from "firebase";
 import "firebase/auth";
 
 const app = firebase.initializeApp({
-    apiKey: "AIzaSyBUW_u-QTiVFTj94CpKA6h2xK5NndelIK4",
-  authDomain: "todo-98c0e.firebaseapp.com",
-  projectId: "todo-98c0e",
-  storageBucket: "todo-98c0e.appspot.com",
-  messagingSenderId: "504914881808",
-  appId: "1:504914881808:web:303c3817ad777672a20995",
-  measurementId: "G-V5P3Q6QGFY"
+    apiKey: "AIzaSyAcNO4coJp88Q7YI9XbWcQW2ydSpSLoAns",
+    authDomain: "todo-app-1041d.firebaseapp.com",
+    projectId: "todo-app-1041d",
+    storageBucket: "todo-app-1041d.appspot.com",
+    messagingSenderId: "528676283269",
+    appId: "1:528676283269:web:712dfb9914e0b6d9881aec",
+    measurementId: "G-GWWQ5QZ59F"
 })
 
-export const auth = app.auth()
-export default auth
+const db = app.firestore();
+const auth = firebase.auth();
+
+export {db,auth}
